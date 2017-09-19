@@ -5,12 +5,20 @@
     
 }
 
+.nav{
+    width: 100%
+}
+
 .navbar-inverse .navbar-nav li a {
     color: white;
 }
 
 .navbar-inverse .navbar-nav li a:hover{
     background: #0b2938;
+}
+
+.home{
+    text-decoration: underline; 
 }
 
 .header{
@@ -33,7 +41,98 @@
    
 }
 
-li .navi.quickadd{
-     float: right !important;
+li.navi.sign{
+     float: right;
+}
+
+li.navi.quickadd{
+     float: right;
+}
+
+.today{
+    background-color: lightgray;
+    width: 30%;
+    height: 350px;
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.login{
+    background-color: lightgray;
+    width: 30%;
+    height: 350px;
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.homePane2{
+    background-color: lightgray;
+    width: 30%;
+    height: 350px;
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.user{
+    margin: 20px;
+}
+
+.pass{
+    margin: 20px
+}
+
+.sub{
+    text-align: center;
+}
+
+.dayView{
+    text-align: center;
+    margin: 20px;
+    padding: 30px;
+    background-color: #104e8b;
+    border-radius: 20px;
+    width: 80%;
+    
+}
+
+.monthView{
+    text-align: center;
+    margin: 20px;
+    padding: 30px;
+    background-color: #104e8b;
+    border-radius: 20px;
+    width: 80%;
+    float: in
    
+}
+
+.addBulletView{
+    
+    text-align: center;
+    margin: 20px;
+    padding: 30px;
+    background-color: #104e8b;
+    border-radius: 20px;
+    width: 80%;
+    
+    
+}
+
+.dayView a{
+    color: white;
+}
+
+.monthView a{
+    color: white;
+}
+
+.addBulletView a{
+    color: white;
+}
+
+.homePane2{
+    text-align: center;
 }
