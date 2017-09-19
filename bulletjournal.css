@@ -56,8 +56,31 @@ li.navi.quickadd{
     margin-left: 20px;
     display: inline-block;
     vertical-align: top;
+   
 }
 
+.today p{
+    padding: 20px;
+    margin: 10px;
+    color: #104e8b;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+.dayView:hover{
+    background-color: #a2b5cd;
+   
+}
+
+.monthView:hover{
+    background-color: #a2b5cd;
+   
+}
+
+.addBulletView:hover{
+    background-color: #a2b5cd;
+   
+}
 .login{
     background-color: lightgray;
     width: 30%;
@@ -65,6 +88,15 @@ li.navi.quickadd{
     margin-left: 20px;
     display: inline-block;
     vertical-align: top;
+    text-align: center;
+    
+}
+
+.login p{
+    padding: 20px;
+    margin: 10px;
+    color: #104e8b;
+    font-size: 30px;
 }
 
 .homePane2{
@@ -94,7 +126,9 @@ li.navi.quickadd{
     padding: 30px;
     background-color: #104e8b;
     border-radius: 20px;
-    width: 80%;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
     
 }
 
@@ -104,8 +138,9 @@ li.navi.quickadd{
     padding: 30px;
     background-color: #104e8b;
     border-radius: 20px;
-    width: 80%;
-    float: in
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
    
 }
 
@@ -116,21 +151,26 @@ li.navi.quickadd{
     padding: 30px;
     background-color: #104e8b;
     border-radius: 20px;
-    width: 80%;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
     
     
 }
 
 .dayView a{
     color: white;
+    text-decoration: underline;
 }
 
 .monthView a{
     color: white;
+    text-decoration: underline;
 }
 
 .addBulletView a{
     color: white;
+    text-decoration: underline;
 }
 
 .homePane2{
