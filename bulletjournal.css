@@ -1,0 +1,39 @@
+.navbar-inverse{
+    background: #3f7fbf;
+    border-color: #3f7fbf;
+    background-image: none;
+    
+}
+
+.navbar-inverse .navbar-nav li a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav li a:hover{
+    background: #0b2938;
+}
+
+.header{
+    background-color:#333333;
+    color: white;
+    border-radius: 40px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    padding: 5px;
+}
+
+.header h1{
+    padding-left: 40px;
+}
+
+.quickadd{
+    padding: 10px;
+   
+}
+
+li .navi.quickadd{
+     float: right !important;
+   
+}
