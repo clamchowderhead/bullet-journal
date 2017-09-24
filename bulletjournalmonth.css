@@ -6,6 +6,17 @@
     text-decoration: none;
 }
 
+.day{
+    text-decoration: none;
+}
+
+.add{
+    text-decoration: none;
+}
+.sign{
+    text-decoration: none;
+}
+/*
 .month-list{
     width: 100%;
     
@@ -13,10 +24,8 @@
 .month-item{
     display: flex;
     border: 5px solid lightslategray;
-    /*font-size: 2.5vw;*/
     list-style-type: none;
     margin: 8px;
-    /*padding: 40px;*/
     width: 15%;  
     height: 10vw;
     text-align: center;
@@ -41,7 +50,48 @@
 }
 
 .month-item:hover{
-    opacity: 0.6; 
+    opacity: 0.6;    
     
+}
+
+*/
+.dates1{
+    display: inline-block;
+    margin: 0px 50px 0px 160px; 
+    padding: 20px;
+}
+.dates2{
+    display: inline-block;
+    margin: 0px 80px 0px 60px; 
+    padding: 20px; 
+}
+
+
+td {
+    padding-left: 10px; 
+    padding-bottom: 4px; 
     
+}
+
+td:nth-child(3){
+    width: 300px;
+}
+
+.dates1 tr:nth-child(even){
+    background-color: lightgrey;
+}
+
+.dates2 tr:nth-child(odd){
+    background-color: lightgrey;
+}
+
+tr:hover{
+    background-color: #7fbdef;
+}
+
+.line{
+    border-left: 2px solid #333333;
+    height: 350px;
+    display: inline-block;
+    margin-bottom: 20px;
 }

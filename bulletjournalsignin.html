@@ -12,7 +12,7 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="bulletjournal.css">
-    <link rel="stylesheet" href="bulletjournaladdbull.css">
+    <link rel="stylesheet" href="bulletjournalsignin.css">
 
     <link href='https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
@@ -40,48 +40,16 @@
             </div>
         </nav>
         
-        <form class='addbullform' action=''>
-            <br/>
-            <p>Add Bullet</p>
-            <div class='addnew'>
-                <label for="newbull">Bullet:</label>
-                <input type="text" name="newbullet" id="newbull" ><br/>
-            </div>
-            <div class='type'>
-            <label for="newbulltype">Choose Bullet Type:</label>
-            <select>
-                <option value=''>•</option>
-                <option value=''>O</option>
-                <option value=''>-</option>
-                <option value=''>></option>
-                <option value=''>&#60;</option>
-            </select><br/><br/>
-            </div>
-            <br/>  
-            <div class='sig'>
-                <label for="newbullsig">Signifier:</label>
-                <select>
-                    <option value=''>--None--</option>
-                    <option value=''>* Priority</option>
-                    <option value=''>! Ideas</option>
-                    <option value=''>◎ Discover</option>
-                </select>
-            </div>
-            <div class='date'>
-                <label for="newbulldate">Date:</label>
-                <input type="date" name="newbulletdate" id="newbulldate" ><br/>
-            </div>
-            <br/>
-            <br/>
-            <div>
-                <input type='submit'/>
-                <input type='reset'>
-            </div>
-            <br/>
-            <br/>
-        </form>
+         <div class='login'> 
+            <p>Sign-In/ Register</p>
+             <br/>
+            <div class='user'>Username: <input type='text' name='username'/></div>
+            <div class='pass'>Password: <input type='password' name= 'password'/></div>
+            <div class='sub'> <input type='submit'/></div>
+            <div class='res'> <input type='reset'/></div>
+        </div>
         
-      
+        
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

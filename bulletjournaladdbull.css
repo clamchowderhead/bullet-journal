@@ -1,0 +1,67 @@
+.month{
+    text-decoration: none; 
+}
+
+.day{
+    text-decoration: none
+}
+
+.home{
+    text-decoration: none;
+}
+
+.sign{
+    text-decoration: none;
+}
+
+.add{
+    text-decoration: underline;
+}
+
+.addbullform{
+    margin: 0 auto;
+    background-color: lightgray;
+    width: 60%;
+    text-align: center;
+    color: #333333;
+    
+}
+
+.addbullform input{
+    padding: 5px;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+.addbullform label{
+    padding: 5px;
+    margin: 5px;
+}
+
+.addbullform p{
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 20px;
+    text-decoration: underline;
+    margin-bottom: 20px; 
+}
+
+.addnew{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.type{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.date{
+    margin-bottom: 15px; 
+    display: inline-block;
+}
+
+.sig{
+    display: inline-block;
+    margin-bottom: 15px; 
+}

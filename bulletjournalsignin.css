@@ -1,0 +1,53 @@
+.month{
+    text-decoration: none; 
+}
+
+.day{
+    text-decoration: none
+}
+
+.home{
+    text-decoration: none;
+}
+
+.add{
+    text-decoration: none;
+}
+
+.sign{
+    text-decoration: underline;
+}
+
+.login{
+    background-color: lightgray;
+    width: 30%;
+    height: 350px;
+    margin-left: 35%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    
+}
+
+.login p{
+    padding: 20px;
+    margin: 10px;
+    color: #104e8b;
+    font-size: 30px;
+}
+
+.user{
+    margin: 20px;
+}
+
+.pass{
+    margin: 20px
+}
+
+.sub{
+    display:inline-block;
+}
+
+.res{
+    display:inline-block;
+}

@@ -1,3 +1,19 @@
+.month{
+    text-decoration: none;
+}
+
+.day{
+    text-decoration: none;
+}
+
+.add{
+    text-decoration: none;
+}
+
+.sign{
+    text-decoration: none;
+}
+
 .navbar-inverse{
     background: #3f7fbf;
     border-color: #3f7fbf;
@@ -117,7 +133,11 @@ li.navi.quickadd{
 }
 
 .sub{
-    text-align: center;
+    display:inline-block;
+}
+
+.res{
+    display:inline-block;
 }
 
 .dayView{
