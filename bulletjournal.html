@@ -41,6 +41,8 @@
         
         <div class='today'> 
             <p>Today's Bullets</p>
+            <ul>
+            </ul>
         </div>
         
         
@@ -53,7 +55,7 @@
         <container class='login'> 
             <p>Sign-In</p>
             <div class='user'>Username: <input type='text' name='username'/></div>
-            <div class='pass'>Password: <input type='password' name= 'password'/></div>
+            <div class='pass' data-toggle='tooltip' title='Must be more than 6 characters'>Password: <input type='password' name= 'password' pattern='.{6,}'/></div>
             <div class='sub'> <input type='submit'/></div>
             <div class='res'> <input type='reset'/></div>
         

@@ -84,17 +84,18 @@ li.navi.quickadd{
 }
 
 .dayView:hover{
-    background-color: #a2b5cd;
+    opacity: 0.6;
    
 }
 
 .monthView:hover{
-    background-color: #a2b5cd;
+    opacity: 0.6;
    
 }
 
 .addBulletView:hover{
-    background-color: #a2b5cd;
+   opacity: 0.6;
+   
    
 }
 .login{
@@ -195,4 +196,15 @@ li.navi.quickadd{
 
 .homePane2{
     text-align: center;
+    position: static;
+}
+
+.today ul{
+    width: 25%;
+    height: 45%;
+    border: 2px solid #104e8b;
+    position: absolute;
+    left: 50px;
+    bottom: 60px;
+    
 }

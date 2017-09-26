@@ -77,15 +77,15 @@ td:nth-child(3){
     width: 300px;
 }
 
-.dates1 tr:nth-child(even){
+.dates1 tr:nth-child(odd){
     background-color: lightgrey;
 }
 
-.dates2 tr:nth-child(odd){
+.dates2 tr:nth-child(even){
     background-color: lightgrey;
 }
 
-tr:hover{
+tr:hover td{
     background-color: #7fbdef;
 }
 
@@ -93,5 +93,43 @@ tr:hover{
     border-left: 2px solid #333333;
     height: 350px;
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 32px;
 }
+
+.dates1{
+   transform: scale(0.9);
+}
+
+.dates2{
+      transform: scale(0.9);
+    
+    
+}
+
+.glyphicon-arrow-left{
+    position: relative;
+    transition: color 0.5s linear;
+    top: -250px;
+    right: -100px;
+    transform: scale(1.5);
+    color: black;
+}
+
+.glyphicon-arrow-right{
+    position: relative;
+    transition: color 0.5s linear;
+    top: -250px;
+    left: -30px;
+     transform: scale(1.5);
+    color: black;
+}
+
+.glyphicon-arrow-right:hover{
+    color: #3f7fbf;  
+}
+
+.glyphicon-arrow-left:hover{
+    color: #3f7fbf; 
+}
+
+
