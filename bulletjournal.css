@@ -21,6 +21,8 @@
     
 }
 
+
+
 .nav{
     width: 100%
 }
@@ -205,6 +207,10 @@ li.navi.quickadd{
     border: 2px solid #104e8b;
     position: absolute;
     left: 50px;
-    bottom: 60px;
+    bottom: 40px;
     
+}
+
+input:focus{
+    color: #104e8b;
 }

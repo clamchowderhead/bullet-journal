@@ -70,3 +70,17 @@
     z-index:5;
     background-color: darkgray;
 }
+
+#help{
+    font-size: 10px;
+    background-color: transparent;
+    z-index: 5;
+    position: absolute;
+    top: 295px;
+    left: 852px;
+    font-weight: bolder;
+}
+
+img{
+    opacity: 0.5;
+}
