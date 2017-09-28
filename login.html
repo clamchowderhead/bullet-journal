@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Bullets </title>
+<link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="mytodo.css">
+<script>
+	function setFocus()
+	{
+		//document.mainform.desc.focus(); // access an object in DOM by name
+		//document.getElementById("taskdesc").focus(); // access an object in DOM by id
+		document.forms[0].elements[0].focus(); // access an object in Dom by position
+	}
+	
+</script>
+</head>
+<body onLoad="setFocus()">
+<body>
+
+<div id="container">
+    <div class="header">
+    	<h1>Login to Bullets</h1>
+    </div>
+    <div class="row">
+	    <div class="col-lg-4 col-lg-offset-4">
+	    	Email (or username):
+	        <div class="input-group">
+	            <input type="text" class="form-control" />
+	            <span class="input-group-btn">
+	                <button class="btn btn-default" type="button">Go!</button>
+	            </span> 
+	        </div>
+	    	Password:
+	        <div class="input-group">
+	            <input type="text" class="form-control" /> 
+	            <span class="input-group-btn">
+	                <button class="btn btn-default" type="button">Go!</button>
+	            </span>
+	        </div><!-- /input-group -->
+	    </div><!-- /.col-lg-4 -->
+	</div><!-- /.row -->
+</div>
+
+    
+
+
+
+<script>
+	function validateData()
+	{
+		if(document.getElementById("taskdesc").value == "")
+			document.getElementById("task-msg").innerHTML = "Please enter tag description";
+		else
+			document.getElementById("task-msg").innerHTML = "";
+
+
+	}
+
+</script>
+
+</body>
+</html>
+			
