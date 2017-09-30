@@ -18,5 +18,30 @@
     text-decoration: underline;
 }
 
+.glyphicon-arrow-left{
+    position: relative;
+    transition: color 0.5s linear;
+    top:150px;
+    left: 20px;
+    transform: scale(1.5);
+    color: black;
+}
+
+.glyphicon-arrow-right{
+    position: relative;
+    transition: color 0.5s linear;
+    top: 140px;
+    left: 1050px;
+     transform: scale(1.5);
+    color: black;
+}
+
+.glyphicon-arrow-right:hover{
+    color: #3f7fbf;  
+}
+
+.glyphicon-arrow-left:hover{
+    color: #3f7fbf; 
+}
 
 

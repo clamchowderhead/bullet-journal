@@ -22,7 +22,7 @@
     <main>
         <div class='header'>
             
-            <h1 class='title'>My Bullet Journal</h1>
+            <h1 class='title'>Bullets</h1>
             
         </div>
         
@@ -49,7 +49,7 @@
             </div>
             <div class='type'>
             <label for="newbulltype">Choose Bullet Type:</label>
-            <select>
+            <select id='bulltype'>
                 <option value=''>•</option>
                 <option value=''>O</option>
                 <option value=''>-</option>
@@ -61,7 +61,7 @@
             <br/>  
             <div class='sig'>
                 <label for="newbullsig">Signifier:</label>
-                <select>
+                <select id='bullpri'>
                     <option value=''>--None--</option>
                     <option value=''>* Priority</option>
                     <option value=''>! Ideas</option>
@@ -75,7 +75,7 @@
             <br/>
             <br/>
             <div>
-                <input type='submit'/>
+                <input type='submit' id='bullsub'/>
                 <input type='reset'>
             </div>
             <br/>
@@ -86,7 +86,6 @@
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    
-    <script src=''></script>
+    <script src='bulletjournal.js'></script>
 </body>
 </html>
