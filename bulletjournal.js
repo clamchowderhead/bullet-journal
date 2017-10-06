@@ -24,7 +24,6 @@ document.getElementById('bullsub').addEventListener("click", function(event) {
     document.getElementById('content').appendChild(date + '<br/>' + priority + ' ' + type + '  ' + text + '<br/>');*/
     
     // Post to the server - TBD
-    alert("Created a bullet for " + bullet.bulletText+ ' '+ bullet.bulletDate);
     return false;
 });
 // Gets input values for each input and create the bullet object. Then, write the bullet to the monthly view and daily view. 

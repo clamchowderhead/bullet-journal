@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Bullet Journal</title>
+    <title>Bullets</title>
     <style>
         body {
             margin: 0 auto;
@@ -43,6 +43,8 @@
         <form class='addbullform' action=''>
             <br/>
             <p>Add Bullet</p>
+            <!--Receive user input-->
+            <form action='add-bullet-php' method='post'>
             <div class='addnew'>
                 <label for="newbull">Bullet:</label>
                 <input type="text" name="newbullet" id="newbull" ><br/>
@@ -50,22 +52,22 @@
             <div class='type'>
             <label for="newbulltype">Choose Bullet Type:</label>
             <select id='bulltype'>
-                <option value='•'>•</option>
+                <option value='•'>+</option>
                 <option value='O'>O</option>
                 <option value='-'>-</option>
                 <option value='>'>></option>
                 <option value='<'>&#60;</option>
             </select><img src="download.jpg" alt="Help" style="width:15px;height:25px; margin:10px;" />
-            <p id='help' data-toggle='tooltip' title='• : Note, O : Event, > : Migrated, < : Scheduled'>Help</p><br/><br/>
+            <p id='help' data-toggle='tooltip' title='+ : Note, O : Event, > : Migrated, < : Scheduled'>Help</p><br/><br/>
             </div>
             <br/>  
             <div class='sig'>
                 <label for="newbullsig">Signifier:</label>
                 <select id='bullpri'>
-                    <option value=''>--None--</option>
-                    <option value='*'>* Priority</option>
-                    <option value='!'>! Ideas</option>
-                    <option value='◎'>◎ Discover</option>
+                    <option value=''>None</option>
+                    <option value='*'>Priority (*)</option>
+                    <option value='!'>Ideas (!)</option>
+                    <option value='$'>Discovery ($)</option>
                 </select>
             </div>
             <div class='date'>
@@ -74,13 +76,12 @@
             </div>
             <br/>
             <br/>
-            <div>
-                <input type='submit' id='bullsub'/>
-                <input type='reset'>
-            </div>
+            <input type='submit' id='bullsub'/>
+            <input type='reset'>
             <br/>
             <br/>
         </form>
+    </form>
         
       
     </main>
