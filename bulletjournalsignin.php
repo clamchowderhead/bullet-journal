@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Bullets</title>
+    <title>My Bullet Journal</title>
     <style>
         body {
             margin: 0 auto;
@@ -12,11 +12,11 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Lato:400,400italic,700' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="bulletjournal.css">
-    <link rel="stylesheet" href="bulletjournaladdbull.css">
+    <link rel="stylesheet" href="bulletjournalsignin.css">
 
     <link href='https://fonts.googleapis.com/css?family=Cambo|Poppins:400,600' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    
+ 
 </head>
 <body>
     <main>
@@ -39,51 +39,39 @@
                 </ul>
             </div>
         </nav>
+         <div class='login'> 
+            <form action='<?php echo $_SERVER['PHP_SELF']; ?>' method='post'>
+                <p>Sign-In/ Register</p>
+                <br/>
+                <div class='user'>Username: <input type='text' name='username'/></div>
+                <div class='pass' data-toggle='tooltip' title='Must be more than 6 characters'>Password: <input type='password' name= 'password' /></div>
+                <div class='sub'> <input name='submit' type='submit'/></div>
+                <div class='res'> <input type='reset'/></div>
+                
+                <?php
+                    if (isset($_POST['submit'] )) //If form submitted...
+                        {   global $password;
+                            $password= trim($_POST['password']);  //Set the $password variable to the password value entered
+                            if(pwdSize($password)){ // Do function pwdSize and if $password less than 6 characters, set to NULL
+                                $password= NULL;
+                            };
+                        }
+
+                    function pwdSize($x){
+                        if(!isset($x[5])){ 
+                        echo "<br/><br/>Password must be at least 6 characters."; //If variable $x is not at least 6 characters, then echo the statement 
+                        return true; 
+                        }
+                        else{
+                            return false;
+                        }
+                    }
+                ?>
+                
+            </form>
+        </div>
         
-        <form class='addbullform' action=''>
-            <br/>
-            <p>Add Bullet</p>
-            <!--Receive user input-->
-            <form action='add-bullet-php' method='post'>
-            <div class='addnew'>
-                <label for="newbull">Bullet:</label>
-                <input type="text" name="newbullet" id="newbull" ><br/>
-            </div>
-            <div class='type'>
-            <label for="newbulltype">Choose Bullet Type:</label>
-            <select id='bulltype' name='newbullettype'>
-                <option value='•'>+</option>
-                <option value='O'>O</option>
-                <option value='-'>-</option>
-                <option value='>'>></option>
-                <option value='<'>&#60;</option>
-            </select><img src="download.jpg" alt="Help" style="width:15px;height:25px; margin:10px;" />
-            <p id='help' data-toggle='tooltip' title='+ : Note, O : Event, > : Migrated, < : Scheduled'>Help</p><br/><br/>
-            </div>
-            <br/>  
-            <div class='sig'>
-                <label for="newbullsig">Signifier:</label>
-                <select id='bullpri' name='newbulletsignifier'>
-                    <option value=''>None</option>
-                    <option value='*'>Priority (*)</option>
-                    <option value='!'>Ideas (!)</option>
-                    <option value='$'>Discovery ($)</option>
-                </select>
-            </div>
-            <div class='date'>
-                <label for="newbulldate">Date:</label>
-                <input type="date" name="newbulletdate" id="newbulldate" ><br/>
-            </div>
-            <br/>
-            <br/>
-            <input type='submit' id='bullsub'/>
-            <input type='reset'>
-            <br/>
-            <br/>
-        </form>
-    </form>
         
-      
     </main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

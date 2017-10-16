@@ -28,11 +28,11 @@
         <nav class='navbar navbar-inverse' >
             <div class='container-fluid '>
                 <ul class='nav navbar-nav navbar-btn'>
-                    <li class='navi home'><a href='bulletjournal.html' >Home</a></li>
+                    <li class='navi home'><a href='bulletjournal.php' >Home</a></li>
                     <li class='navi month'><a href='bulletjournalmonth.html'>Month</a></li>
                     <li class='navi day'><a href='bulletjournalday.html'>Day</a></li>
                     <li class='navi add'><a href='bulletjournaladdbull.html' >Add Bullet</a></li>
-                    <li class= 'navi sign'><a href='bulletjournalsignin.html'>Sign-In</a></li>
+                    <li class= 'navi sign'><a href='bulletjournalsignin.php'>Sign-In</a></li>
                     <li class= 'navi quickadd'> <input type='text' placeholder= 'Quickadd'/>&nbsp;<input type='submit'/> </li>
                     
                 </ul>
@@ -53,11 +53,13 @@
         </container>
         
         <container class='login'> 
-            <p>Sign-In</p>
-            <div class='user'>Username: <input type='text' name='username'/></div>
-            <div class='pass' data-toggle='tooltip' title='Must be more than 6 characters'>Password: <input type='password' name= 'password' pattern='.{6,}'/></div>
-            <div class='sub'> <input type='submit'/></div>
-            <div class='res'> <input type='reset'/></div>
+            <form action='' method='post'>
+                <p>Sign-In</p>
+                <div class='user'>Username: <input type='text' name='username'/></div>
+                <div class='pass' data-toggle='tooltip' title='Must be more than 6 characters'>Password: <input type='password' name= 'password' pattern='.{6,}'/></div>
+                <div class='sub'> <input name='sub' type='submit'/></div>
+                <div class='res'> <input type='reset'/></div>
+            </form>
         
         </container>
         
