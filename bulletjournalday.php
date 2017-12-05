@@ -43,62 +43,49 @@
         
     
 
-<div  data-ng-controller="myController">
+<div data-ng-controller="myController">
     <p>
       {{msg}}
       <br/>
-      Add: <input type="text" data-ng-model="add" /> <input type = "submit"  value = "submit" data-ng-click="sendData()"  /> <input type = "reset"  value = "reset" data-ng-click="subFunc()" /><br/>
+      
+      <form>      
+      Add: <input type="text" data-ng-model="add" /> 
+      <input type = "submit"  value = "submit" ng-click="sendData()"  />
+      <input type = "reset"  value = "reset" data-ng-click="resetFunction()" /><br/>
       Confirm Add: {{add}}<br/>
       Error: {{error}}
+      </form>
       </p>
 </div>
 
+   
    <script>
       var myApp = angular.module("myApp", []);
-
       myApp.controller("myController", function ($scope,$http) 
       {
+
+        //All of the relevant datbase stuff
+
     	 
     	  $scope.msg= "Enter a bullet description in order to add it to the list. ";
-
-        var onSuccess = function (data, status, headers, config)
-         {
-            $scope.data = data;
-         };
-
-         var onError = function (data, status, headers, config)
-         {
-            $scope.error = status;
-         }
-
-         var add = $scope.add;
-         $scope.sendData = function() {
-          if ($scope.add !== undefined) {
-            var promise = $http.post("http://localhost/bullet-journal/testing.php", {"add": $scope.add});
-               promise.success(onSuccess);
-               promise.error(onError); 
-          }
-          else 
-          {
-            $scope.data = "undefined"; 
-          }
-         }
     	  
-    	  $scope.subFunc = function() {
-    	        $scope.add="";
-    	  };
-    	  
-    	 
-        $scope.getInfo = function($) {
-  			  var promise = $http.post("http://localhost:8080/NewBackEndBulletJournal/login", {"username": "hello","password": "goodbye" });
-                promise.success(onSuccess);
-                promise.error(onError);       
+    	  //Package the add variable and send it to the other php file
+        $scope.sendData = function() {
+          $http.post('http://localhost/bullet-journal/testing.php', {"add":$scope.add});
+        }
+        
+        $scope.resetFunction = function() {
+            $scope.add = "";  	   
         }
 
+        //Send the information into a database
 
 
-      });
+
+    });
     </script>
+
+    
 
     
     <div class='container'>  
